@@ -1,0 +1,97 @@
+<HTML>
+    <head>
+    <link rel="stylesheet" href="style.css" />
+    <SCRIPT type="text/javascript">
+     
+     
+     
+     var sec=0
+     
+    function f1()
+    {
+     var First = new Date()
+     sec=First
+      
+    }
+     
+     
+      
+    var sec2 = 0
+    var sec1 = 0
+    function f2()
+    {
+     
+       var Now = new Date()
+       sec1=Now
+     
+       
+     sec2=Math.round((sec1-sec)/1000) 
+     
+      
+     if (text1.value==5 && text2.value==9 && text3.value==7){
+     
+      comment.value="Количество правильных ответов = 3 "+" Тест решен за: "+sec2+" секунд(-у)"
+     } 
+     else if (text1.value==5 && text2.value!=9 && text3.value==7){
+     
+      comment.value="Количество правильных ответов = 2 "+" Тест решен за: "+sec2+" секунд(-у)"
+     } 
+     else if (text1.value!=5 && text2.value==9 && text3.value==7){
+     
+      comment.value="Количество правильных ответов = 2 "+" Тест решен за: "+sec2+" секунд(-у)"
+     } 
+     else if (text1.value==5 && text2.value==9 && text3.value!=7){
+     
+      comment.value="Количество правильных ответов = 2 "+" Тест решен за: "+sec2+" секунд(-у)"
+     } 
+     else if (text1.value!=5 && text2.value!=9 && text3.value==7){
+      
+      comment.value="Количество правильных ответов = 1 "+" Тест решен за: "+sec2+" секунд(-у)"
+     } 
+     else if (text1.value==5 && text2.value!=9 && text3.value!=7){
+      
+      comment.value="Количество правильных ответов = 1 "+" Тест решен за: "+sec2+" секунд(-у)"
+     } 
+     else if (text1.value!=5 && text2.value==9 && text3.value!=7){
+     
+      comment.value="Количество правильных ответов = 1 "+" Тест решен за: "+sec2+" секунд(-у)"
+     } 
+     else if (text1.value!=5 && text2.value!=9 && text3.value!=7){
+      
+      comment.value="Количество правильных ответов = 0 "+" Тест решен за: "+sec2+" секунд(-у)"
+      
+     } 
+     
+     
+     
+    }
+     
+     
+    </SCRIPT>
+    </HEAD>
+    <BODY onload=f1()>
+      <header>
+        <table>
+          <tr>
+            <td><img src="https://media.baamboozle.com/uploads/images/56602/1591911735_314242"></td>
+            <td><a href = "index_main.html">Главная</a></td>
+            <td><a href = "index3.html">Теория</a></td>
+            <td><a href = "script.html">Тренажер</a></td>
+            <td><p>О нас</p></td>
+          </tr>
+        </table>
+      </header>
+     
+    <div class="main">
+    <p><span>1+4=</span><INPUT id=text1>
+    <p><span>3+6=</span><INPUT id=text2>
+    <p><span>12-5=</span><INPUT id=text3>
+    </div>
+     
+     
+    <p><TEXTAREA rows=10 cols=35 id=comment></Textarea>
+     
+     
+     
+    <p><INPUT id=but1 type=button value="Отправить ответы" onclick=f2()>
+    </BODY>

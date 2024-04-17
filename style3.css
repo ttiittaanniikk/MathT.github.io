@@ -1,0 +1,38 @@
+.card {
+  background-color: rgb(237, 104, 104);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 600px;
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 16px;
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  padding: 16px;
+}
+body {
+  background-color: #D4B0B0;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 40px;
+  letter-spacing: 0px;
+  text-align: left
+}
+img{
+  width: 60px;
+  height: 60px
+}
+header {
+  background: rgb(237, 104, 104);;
+  color: rgb(255, 255, 255);
+  font-family: Inter;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: 1px;
+  text-align: left
+}
